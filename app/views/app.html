@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./app/res/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./app/res/styles/bootstrap.css" media="screen">
+    <script defer src="./app/res/scripts/bootstrap.js"></script>
+    <script defer src="./app/res/scripts/jquery-3.6.0.js"></script>
+    <script defer src="./app/app.js"></script>
+    <title>Text Tools</title>
+</head>
+<body style="background-color:#2f2f2f;">
+    <div id="teste" class="">
+        <h1 class="text-center text-white my-4">Text Tools</h1>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-row flex-wrap">
+            <div class="px-4">
+                <div class="text-center text-white"><h2>Como funciona:</h2></div>
+                <div>
+                    <p class="text-center text-white my-0">Escreva ou cole algum texto no primeiro espaço.</p>
+                    <p class="text-center text-white my-0">Escolha uma opção para modificar o texto.</p>
+                    <p class="text-center text-white my-0">Aperte em "Transformar".</p>
+                    <p class="text-center text-white my-0">Copie o resultado para onde você quiser</p>
+                    <p class="text-center text-white mb-4">Divirta-se!</p>
+                </div>
+                <div>
+                    <p class="text-center text-white my-2">Opções disponíveis:</p>
+                    <ul class="text-white">
+                        <li >minusculas - deixa o texto todo minúsculo</li>
+                        <li >MAIÚSCULA - deixa o texto todo maiúsculo</li>
+                        <li >Aleatório - embaralha as letras da palavra ou palavras de uma frase</li>
+                        <li >EsseS noS FinS - adiciona "s" ou "es" no fim de cada palavra</li>
+                        <li >CaMeLcAsE - alterna entre letras maiúsculas e minúsculas</li>
+                        <li >E s p a ç o - adiciona espaços entre cada letra</li>
+                        <li >Espelho - inverte a ordem do texto, da última para a primeira letra</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col px-4" id="form">
+                <form id="formulario" class="form-group" action="" method="post">
+                    <textarea class="form-control my-2" name="input" id="input" cols="30" rows="5" placeholder="Escreva ou cole seu texto"></textarea>
+                    <label class="text-white" for="options">Escolha uma opção</label>
+                    <select class="form-control" name="options" id="options">
+                        <option value="min">minusculas</option>
+                        <option value="mai">MAIÚSCULA</option>
+                        <option value="ran">Aleatório</option>
+                        <option value="ess">EsseS noS FinS</option>
+                        <option value="cam">CaMeLcAsE</option>
+                        <option value="esp">E s p a ç o</option>
+                        <option value="mir">Espelho - ohlepsE</option>
+                    </select>
+                    <div>
+                        <button class="btn btn-outline-light my-2" type="submit">Transformar</button>
+                    </div>
+                </form>
+                <div>
+                    <textarea id="resultado" class="form-control my-2" name="resp" id="resposta" cols="30" rows="5" placeholder="Resultado"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
